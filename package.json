@@ -1,0 +1,29 @@
+{
+	"name": "getter-or-setter-name",
+	"version": "1.0.0",
+	"description": "Test whether a string could be a getter og setter name such as `getName`",
+	"main": "index.js",
+	"keywords": [
+		"get",
+		"set",
+		"getter",
+		"setter"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tjconcept/js-getter-or-setter-name.git"
+	},
+	"author": {
+		"name": "Thomas Jensen",
+		"email": "thomas@tjconcept.dk",
+		"url": "http://tjconcept.dk"
+	},
+	"devDependencies": {
+		"tap": "~0.4.8"
+	},
+	"scripts": {
+		"test": "./node_modules/.bin/tap test.js"
+	},
+	"readmeFilename": "README.md",
+	"license": "MIT"
+}
