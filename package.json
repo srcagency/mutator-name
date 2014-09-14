@@ -1,22 +1,25 @@
 {
-	"name": "getter-or-setter-name",
+	"name": "mutator-name",
 	"version": "1.0.0",
-	"description": "Test whether a string could be a getter og setter name such as `getName`",
+	"description": "Easing work with mutator names such as `getName`",
 	"main": "index.js",
 	"keywords": [
 		"get",
 		"set",
 		"getter",
-		"setter"
+		"setter",
+		"accessor",
+		"mutator",
+		"method"
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/tjconcept/js-getter-or-setter-name.git"
+		"url": "https://github.com/srcagency/mutator-name.git"
 	},
 	"author": {
 		"name": "Thomas Jensen",
-		"email": "thomas@tjconcept.dk",
-		"url": "http://tjconcept.dk"
+		"email": "thomas@src.agency",
+		"url": "http://src.agency"
 	},
 	"devDependencies": {
 		"tap": "~0.4.8"

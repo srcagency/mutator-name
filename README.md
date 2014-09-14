@@ -1,26 +1,26 @@
-# getter-or-setter-name
+# Mutator name
 
 Determines whether a string has a `set` or `get` prefix
 
 ## Installation
 
-	$ npm install getter-or-setter-name
+	$ npm install mutator-name
 
 ## Usage
 
-	var getterOrSetterName = require('getter-or-setter-name');
+	var mutator = require('mutator-name');
 
-	getterOrSetterName('getName');				// true
-	getterOrSetterName('setAge');				// true
-	getterOrSetterName('setupConnection');		// false
-	getterOrSetterName('get');					// false
-	getterOrSetterName('getting');				// false
+	mutator('getName');				// true
+	mutator('setAge');				// true
+	mutator('setupConnection');		// false
+	mutator('get');					// false
+	mutator('getting');				// false
 
-	getterOrSetterName.type('getName', 'get');	// 'get'
+	mutator.type('getName');		// 'get'
 
-	getterOrSetterName.getter('getName');		// true
-	getterOrSetterName.setter('setName');		// true
+	mutator.getter('getName');		// true
+	mutator.setter('setName');		// true
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT) © [Thomas Jensen](http://tjconcept.dk)
+[MIT](http://opensource.org/licenses/MIT) © Thomas Jensen @ [src.agency](http://src.agency)

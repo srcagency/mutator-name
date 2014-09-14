@@ -1,25 +1,25 @@
 'use strict';
 
-var getterOrSetterName = require('./');
 var test = require('tap').test;
+var m = require('./');
 
 test(function( t ) {
-	t.equal(getterOrSetterName.type('getName'), 'get');
-	t.equal(getterOrSetterName.type('setName'), 'set');
-	t.equal(getterOrSetterName.type('test'), false);
+	t.equal(m.type('getName'), 'get');
+	t.equal(m.type('setName'), 'set');
+	t.equal(m.type('test'), false);
 
+	t.equal(m.getter('getName'), true);
+	t.equal(m.getter('setName'), false);
 
-	t.equal(getterOrSetterName.getter('getName'), true);
-	t.equal(getterOrSetterName.getter('setName'), false);
+	t.equal(m.setter('setName'), true);
+	t.equal(m.setter('getName'), false);
 
-	t.equal(getterOrSetterName.setter('setName'), true);
-	t.equal(getterOrSetterName.setter('getName'), false);
+	t.equal(m('getName'), true);
+	t.equal(m('setAge'), true);
+	t.equal(m('setupConnection'), false);
+	t.equal(m('get'), false);
+	t.equal(m('getting'), false);
 
-	t.equal(getterOrSetterName('getName'), true);
-	t.equal(getterOrSetterName('setAge'), true);
-	t.equal(getterOrSetterName('setupConnection'), false);
-	t.equal(getterOrSetterName('get'), false);
-	t.equal(getterOrSetterName('getting'), false);
 
 	t.end();
 });
