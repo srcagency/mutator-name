@@ -23,6 +23,9 @@ Determines whether a string has a `set` or `get` prefix
 	mutator.getter('getName');		// true
 	mutator.setter('setName');		// true
 
+	mutator.getterFrom('name');		// 'getName'
+	mutator.setterFrom('name');		// 'setName'
+
 ## License
 
 [MIT](http://opensource.org/licenses/MIT) © Thomas Jensen @ [src.agency](http://src.agency)

@@ -20,6 +20,8 @@ test(function( t ) {
 	t.equal(m('get'), false);
 	t.equal(m('getting'), false);
 
+	t.equal(m.getterFrom('name'), 'getName');
+	t.equal(m.setterFrom('name'), 'setName');
 
 	t.end();
 });
