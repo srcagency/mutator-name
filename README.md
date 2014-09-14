@@ -17,6 +17,8 @@ Determines whether a string has a `set` or `get` prefix
 	mutator('getting');				// false
 
 	mutator.type('getName');		// 'get'
+	mutator.type('setName');		// 'set'
+	mutator.type('none');			// falsey
 
 	mutator.getter('getName');		// true
 	mutator.setter('setName');		// true
