@@ -1,7 +1,7 @@
 'use strict';
 
-var test = require('tap').test;
 var m = require('./');
+var test = require('tape');
 
 test(function( t ) {
 	t.equal(m.type('getName'), 'get');
