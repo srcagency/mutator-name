@@ -9,19 +9,19 @@ mutatorName.getterFrom = getterFrom;
 mutatorName.setterFrom = setterFrom;
 mutatorName.nameFrom = nameFrom;
 
-function mutatorName( fnOrName ) {
+function mutatorName( fnOrName ){
 	return !!type(fnOrName);
 }
 
-function getter( fnOrName ) {
+function getter( fnOrName ){
 	return type(fnOrName) === 'get';
 }
 
-function setter( fnOrName ) {
+function setter( fnOrName ){
 	return type(fnOrName) === 'set';
 }
 
-function type( fnOrName ) {
+function type( fnOrName ){
 	if (typeof fnOrName === 'function')
 		fnOrName = fnOrName.name;
 
@@ -35,15 +35,15 @@ function type( fnOrName ) {
 		return threeFirst;
 }
 
-function getterFrom( name ) {
+function getterFrom( name ){
 	return 'get' + name.substr(0, 1).toUpperCase() + name.substr(1);
 }
 
-function setterFrom( name ) {
+function setterFrom( name ){
 	return 'set' + name.substr(0, 1).toUpperCase() + name.substr(1);
 }
 
-function nameFrom( fnOrName ) {
+function nameFrom( fnOrName ){
 	if (typeof fnOrName === 'function')
 		fnOrName = fnOrName.name;
 
