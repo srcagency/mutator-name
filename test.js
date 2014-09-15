@@ -29,5 +29,10 @@ test(function( t ) {
 	t.equal(m.getterFrom('name'), 'getName');
 	t.equal(m.setterFrom('name'), 'setName');
 
+	t.equal(m.nameFrom('getName'), 'name');
+	t.equal(m.nameFrom('setName'), 'name');
+	t.notOk(m.nameFrom('setupSomething'));
+	t.notOk(m.nameFrom('gettingSomething'));
+
 	t.end();
 });
